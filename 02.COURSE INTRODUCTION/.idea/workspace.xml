@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6541ec1e-667b-458d-8764-dd4d95a3cc6f" name="Default" comment="" />
+    <list default="true" id="f7521fda-28ec-4486-bc67-cb1e11946b1c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,7 +11,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -25,10 +36,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="49" />
-    <option name="y" value="147" />
-    <option name="width" value="920" />
-    <option name="height" value="768" />
+    <option name="x" value="-7" />
+    <option name="y" value="30" />
+    <option name="width" value="974" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -45,27 +56,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="20.EXERCISE FUNCTIONAL PROGRAMMING" type="b2602c69:ProjectViewProjectNode" />
-              <item name="20.EXERCISE FUNCTIONAL PROGRAMMING" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java Advanced - януари 2017/20.EXERCISE FUNCTIONAL PROGRAMMING" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -91,7 +91,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="20.EXERCISE FUNCTIONAL PROGRAMMING" />
+      <module name="02.COURSE INTRODUCTION" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -117,17 +117,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6541ec1e-667b-458d-8764-dd4d95a3cc6f" name="Default" comment="" />
-      <created>1505303238473</created>
+      <changelist id="f7521fda-28ec-4486-bc67-cb1e11946b1c" name="Default" comment="" />
+      <created>1505745110637</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1505303238473</updated>
-      <workItem from="1505303239841" duration="67000" />
+      <updated>1505745110637</updated>
+      <workItem from="1505745111981" duration="55000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67000" />
+    <option name="totallyTimeSpent" value="55000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="24" width="1374" height="748" extended-state="6" />

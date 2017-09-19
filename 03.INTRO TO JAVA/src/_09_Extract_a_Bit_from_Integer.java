@@ -1,4 +1,4 @@
-import java.util.Scanner;  // 80/100
+import java.util.Scanner;  // 100/100
 
 public class _09_Extract_a_Bit_from_Integer {
     public static void main(String[] args) {

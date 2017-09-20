@@ -7,25 +7,23 @@ public class _08_First_Odd_or_Even_Elements {
 
         Scanner scanner = new Scanner(System.in);
 
-
         String[] area = scanner.nextLine().split("\\s+");
         String[] comand = scanner.nextLine().split("\\s+");
         int n = Integer.parseInt(comand[1]);
         Integer counter = 1;
 
         if (comand[2].equals("odd")) {
-            for (int i = 0; i < area.length; i++) {
-                if (n >= counter && Integer.parseInt(area[i]) % 2 != 0) {
-                    System.out.printf("%d ", Integer.parseInt(area[i]));
+            for (String anArea : area) {
+                if (n >= counter && Integer.parseInt(anArea) % 2 != 0) {
+                    System.out.printf("%d ", Integer.parseInt(anArea));
                     counter++;
                 }
-
             }
         }
         else if (comand[2].equals("even")) {
-            for (int i = 0; i < area.length; i++) {
-                if (n >= counter && Integer.parseInt(area[i]) % 2 == 0) {
-                    System.out.printf("%d ", Integer.parseInt(area[i]));
+            for (String anArea : area) {
+                if (n >= counter && Integer.parseInt(anArea) % 2 == 0) {
+                    System.out.printf("%d ", Integer.parseInt(anArea));
                     counter++;
                 }
 

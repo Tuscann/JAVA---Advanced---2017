@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _03_Diagonal_Difference {
+public class _03_Diagonal_Difference {              // 100/100
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

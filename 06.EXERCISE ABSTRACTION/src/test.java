@@ -1,98 +1,76 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
 
-        Scanner scan = new Scanner(System.in);
-        String[] input = scan.nextLine().split(" ");
-        int row = Integer.parseInt(input[0]);
-        int col = Integer.parseInt(input[1]);
-        String[][] matrix = new String[row][col];
-        for (int i = 0; i < row; i++) {
-            matrix[i] = scan.nextLine().split(" ");
-        }
+        String[] commandArgs = in.nextLine().split("[()]");
+        ArrayList<String> matrix = new ArrayList<>();
 
-        int maxCount = 0;
-        String maxString = "";
 
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
+        Integer longestRow = 0;
 
-                /*int front = 0;
-                String temp = matrix[i][j]+", ";
-                for (int k = j; k < matrix[i].length-1; k++) {
-                    if(matrix[i][k].equals(matrix[i][k+1])){
-                        front++;
-                        temp += matrix[i][k]+", ";
-                    } else {
-                        break;
-                    }
-                }
-                if(front > maxCount){
-                    maxCount = front;
-                    maxString = temp;
-                }*/
-
-                int down = 0;
-                String temp2 = matrix[i][j] + ", ";
-                for (int k = i; k < matrix.length - 1; k++) {
-                    if (matrix[k][j].equals(matrix[k + 1][j])) {
-                        down++;
-                        temp2 += matrix[i][j] + ", ";
-                    } else {
-                        break;
-                    }
-                }
-                if (down > maxCount) {
-                    maxCount = down;
-                    maxString = temp2;
-                }
-
-                int count3 = 0;
-                String temp3 = matrix[i][j] + ", ";
-                for (int k = i; k < Math.min(matrix.length - 1, matrix[i].length - 1); k++) {
-                    if (matrix[k][k].equals(matrix[k + 1][k + 1])) {
-                        count3++;
-                        temp3 += matrix[k][k] + ", ";
-                    } else {
-                        break;
-                    }
-                }
-                if (count3 > maxCount) {
-                    maxCount = count3;
-                    maxString = temp3;
-                }
-
-                /*int backDiagonal = 0;
-                String temp4 =  matrix[i][j]+", ";
-                int q = j;
-                for (int s = i; s < matrix.length-1; s++) {
-                    if(q > 0) {
-                        if (matrix[s][q].equals(matrix[s + 1][q - 1])) {
-                            backDiagonal++;
-                            temp4 += matrix[i][j] + ", ";
-                        } else {
-                            break;
-                        }
-                    }
-                    q--;
-                }
-                if(backDiagonal > maxCount){
-                    maxCount = backDiagonal;
-                    maxString = temp4;
-                }*/
-
+//        while (!command.equals("END")) {
+//            if (command.length() > longestRow) {
+//                longestRow = command.length();
+//            }
+//            matrix.add(command);
+//            command = in.nextLine();
+//        }
+        while (true) {
+            String command = in.nextLine();
+            if (command.equals("ЕND")) {
+                break;
             }
-        }
-        if (maxString.equals("")) {
-            maxString = matrix[0][0] + ",";
+            if (command.length() > longestRow) {
+                longestRow = command.length();
+            }
+            matrix.add(command);
         }
 
+        int angle = Integer.parseInt(commandArgs[1]);
 
-        System.out.println(removeLastChar(maxString));
+        switch (angle % 360) {
+            case 90:
+                for (int i = 0; i < longestRow; i++) {
+                    for (int j = matrix.size() - 1; j >= 0; j--) {
+                        if (i >= matrix.get(j).length())
+                            System.out.printf(" ");
+                        else
+                            System.out.print(matrix.get(j).charAt(i));
+                    }
+
+                    System.out.println();
+                }
+                break;
+            case 180:
+                for (int i = matrix.size() - 1; i >= 0; i--) {
+                    String toPrint = new StringBuilder(matrix.get(i)).reverse().toString();
+                    System.out.println(padLeft(toPrint, longestRow));
+                }
+                break;
+            case 270:
+                for (int i = longestRow - 1; i >= 0; i--) {
+                    for (String aMatrix : matrix) {
+                        if (i >= aMatrix.length())
+                            System.out.print(" ");
+                        else
+                            System.out.print(aMatrix.charAt(i));
+                    }
+
+                    System.out.println();
+                }
+                break;
+            case 0:
+                for (String aMatrix : matrix) {
+                    System.out.println(aMatrix);
+                }
+                break;
+        }
     }
 
-    private static String removeLastChar(String str) {
-        return str.substring(0, str.length() - 2);
+    private static String padLeft(String s, int n) {
+        return String.format("%1$" + n + "s", s);
     }
 }

@@ -18,10 +18,7 @@ public class _08_Matrix_shuffling {
             if (currentCommand[0].equals("END")) {
                 break;
             }
-
-
             if (currentCommand[0].equals("swap") && currentCommand.length == 5) {
-
 
                 Integer startRow = Integer.parseInt(currentCommand[1]);
                 Integer startColum = Integer.parseInt(currentCommand[2]);
@@ -40,7 +37,6 @@ public class _08_Matrix_shuffling {
                     printMatrix(matrix);
                 }
 
-
             } else {
                 System.out.printf("Invalid input!\n");
             }
@@ -56,5 +52,4 @@ public class _08_Matrix_shuffling {
             System.out.println();
         }
     }
-
 }

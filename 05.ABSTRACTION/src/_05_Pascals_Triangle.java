@@ -1,5 +1,5 @@
 import java.util.Arrays;
-import java.util.Scanner;
+import java.util.Scanner;  // 60/100
 
 public class _05_Pascals_Triangle {
     public static void main(String[] args) {

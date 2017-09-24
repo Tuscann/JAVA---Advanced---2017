@@ -1,8 +1,6 @@
-import org.omg.CORBA.INTERNAL;
-
 import java.util.Scanner;
 
-public class _02_Matrix_of_Palindromes {
+public class _02_Matrix_of_Palindromes {        // 100/100
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _01_Fill_the_Matrix {
+public class _01_Fill_the_Matrix {  //100/100
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

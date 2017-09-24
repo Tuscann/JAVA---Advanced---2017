@@ -1,14 +1,16 @@
+import java.math.BigInteger;
 import java.util.Scanner;
-public class _05_Pascals_Triangle3 {
+
+public class _05_Pascals_Triangle3 {   // 100/100
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int height = Integer.parseInt(scanner.nextLine());
 
-        long[][] pascalTriangle = generatePascalTriangle(height);
+        BigInteger[][] pascalTriangle = generatePascalTriangle(height);
 
-        for (long[] nums : pascalTriangle) {
-            for (long n : nums) {
-                if (n != 0) {
+        for (BigInteger[] nums : pascalTriangle) {
+            for (BigInteger n : nums) {
+                if (n != null) {
                     System.out.print(n + " ");
                 }
             }
@@ -16,20 +18,19 @@ public class _05_Pascals_Triangle3 {
         }
     }
 
-    private static long[][] generatePascalTriangle(int height) {
-        long[][] pascalTriangle = new long[height][height];
+    private static BigInteger[][] generatePascalTriangle(int height) {
+        BigInteger[][] pascalTriangle = new BigInteger[height][height];
         for (int currentHeight = 0; currentHeight < height; currentHeight++) {
-            pascalTriangle[currentHeight][0] = 1;
-            pascalTriangle[currentHeight][currentHeight] = 1;
+            pascalTriangle[currentHeight][0] = BigInteger.ONE;
+            pascalTriangle[currentHeight][currentHeight] = BigInteger.ONE;
             if (currentHeight > 1) {
                 for (int i = 1; i < currentHeight; i++) {
-                    long[] previousRow = pascalTriangle[currentHeight - 1];
-                    long previousRowSum = previousRow[i] + previousRow[i - 1];
+                    BigInteger[] previousRow = pascalTriangle[currentHeight - 1];
+                    BigInteger previousRowSum = previousRow[i].add(previousRow[i - 1]);
                     pascalTriangle[currentHeight][i] = previousRowSum;
                 }
             }
         }
-
         return pascalTriangle;
     }
 }

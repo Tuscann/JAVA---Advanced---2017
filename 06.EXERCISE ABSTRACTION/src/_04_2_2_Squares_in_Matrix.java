@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _04_2_2_Squares_in_Matrix {
+public class _04_2_2_Squares_in_Matrix {     // 100/100
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -31,7 +31,5 @@ public class _04_2_2_Squares_in_Matrix {
             }
         }
         System.out.println(counter);
-
-
     }
 }

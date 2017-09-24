@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _03_Diagonal_Difference2 {
+public class _03_Diagonal_Difference2 {          // 100/100
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);

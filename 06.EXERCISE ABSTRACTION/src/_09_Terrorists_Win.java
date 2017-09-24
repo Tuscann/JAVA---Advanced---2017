@@ -1,12 +1,42 @@
 import java.util.Scanner;
 
-public class _09_Terrorists_Win {
+public class _09_Terrorists_Win {               // 100/100
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-        String[] input = scan.nextLine().split("\\|");
+        String text = in.nextLine();
+        char[] afterExplosion = text.toCharArray();
 
+        for (int i = 0; i < text.length(); i++) {
+            if (text.charAt(i) == '|') {
+                int bombPower = 0;
+                int indexOfTheEndOfTheBomb = 0;     // ??
+                for (int j = i + 1; j < text.length(); j++) {
+                    if (text.charAt(j) == '|') {
+                        indexOfTheEndOfTheBomb = j;
+                        break;
+                    }
+                    bombPower += text.charAt(j);
+                }
 
+                int bombExplosionRadius = bombPower % 10;
+                int start = 0;
+                int end = text.length() - 1;
+                if (i - bombExplosionRadius > start) {
+                    start = i - bombExplosionRadius;
+                }
+                if (indexOfTheEndOfTheBomb + bombExplosionRadius < end) {
+                    end = indexOfTheEndOfTheBomb + bombExplosionRadius;
+                }
 
+                for (int j = start; j <= end; j++) {
+                    afterExplosion[j] = '.';
+                }
+
+                i = indexOfTheEndOfTheBomb;
+            }
+        }
+
+        System.out.printf(new String(afterExplosion));
     }
 }

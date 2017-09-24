@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class _05_Maximal_Sum {
@@ -46,6 +45,5 @@ public class _05_Maximal_Sum {
             }
             System.out.println();
         }
-
     }
 }

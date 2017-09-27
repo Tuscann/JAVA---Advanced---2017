@@ -4,6 +4,7 @@ public class _02_Encrypt_Sort_and_Print_Array {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = Integer.parseInt(scanner.nextLine());
+
         String[] lines = new String[n];
         for (int i = 0; i <= n - 1; i++) {
             lines[i] = scanner.nextLine();
@@ -35,8 +36,8 @@ public class _02_Encrypt_Sort_and_Print_Array {
     }
 
     private static void printArray(int[] lines) {
-        for (int i = 0; i < lines.length; i++) {
-            System.out.println(lines[i]);
+        for (int line : lines) {
+            System.out.println(line);
         }
     }
 }

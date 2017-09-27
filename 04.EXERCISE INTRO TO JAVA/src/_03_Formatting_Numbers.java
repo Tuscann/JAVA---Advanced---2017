@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _03_Formatting_Numbers {
+public class _03_Formatting_Numbers {              // 100/100
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

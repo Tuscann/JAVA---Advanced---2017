@@ -10,15 +10,10 @@ public class _04_2_2_Squares_in_Matrix {     // 100/100
 
         String[][] matrix = new String[rows][cols];
 
-//        for (int i = 0; i < rows; i++) {
-//            matrix[i] = scan.nextLine().split("\\s+");
-//        }
         for (int i = 0; i < rows; i++) {
-            String[] currentRow = scan.nextLine().split("\\s+");
-            for (int j = 0; j < cols; j++) {
-                matrix[i][j] = currentRow[j];
-            }
+            matrix[i] = scan.nextLine().split("\\s+");
         }
+
         Integer counter = 0;
 
         for (int i = 0; i < rows - 1; i++) {

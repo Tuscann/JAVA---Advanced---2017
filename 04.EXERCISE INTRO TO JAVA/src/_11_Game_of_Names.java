@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _11_Game_of_Names {
+public class _11_Game_of_Names {                // 100/100
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Integer n = Integer.parseInt(scanner.nextLine());

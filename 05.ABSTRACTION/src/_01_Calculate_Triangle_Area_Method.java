@@ -12,7 +12,8 @@ public class _01_Calculate_Triangle_Area_Method {
 
     }
 
-    private static Double calculateArea(Double base, Double height) {
+    private static Double calculateArea(Double base, Double height)
+    {
         return base * height / 2;
     }
 }

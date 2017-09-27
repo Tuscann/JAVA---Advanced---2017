@@ -43,9 +43,7 @@ public class _01_Fill_the_Matrix {  //100/100
                 }
             }
         }
-
         return matrix;
-
     }
 
     private static Integer[][] calcilateTypeA(Integer rows) {

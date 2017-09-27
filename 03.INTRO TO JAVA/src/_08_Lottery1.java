@@ -7,12 +7,14 @@ public class _08_Lottery1 {
     }
 
     private static void printAllCombinations(int index, int startNum) {
-        if (index == 3) {
+        if (index == 3)
+        {
             System.out.printf("%d %d %d\n", combinations[0], combinations[1], combinations[2]);
             return;
         }
 
-        for (int j = startNum; j <= 10; j++) {
+        for (int j = startNum; j <= 10; j++)
+        {
             combinations[index] = j;
             printAllCombinations(index + 1, j + 1);
         }

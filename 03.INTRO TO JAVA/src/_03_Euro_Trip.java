@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class _03_Euro_Trip {
+public class _03_Euro_Trip {                      // 100/100
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

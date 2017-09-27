@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class _13_Blur_Filter3 {
+public class _13_Blur_Filter3 {                      //100/100
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

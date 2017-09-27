@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _09_Byte_Party {
+public class _09_Byte_Party {                    // 100/100
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

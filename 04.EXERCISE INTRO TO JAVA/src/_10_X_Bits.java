@@ -1,5 +1,5 @@
 import java.io.IOException;
-import java.util.Scanner;
+import java.util.Scanner;     // 100/100
 
 public class _10_X_Bits {
     public static void main(String[] args) throws IOException {
@@ -23,7 +23,5 @@ public class _10_X_Bits {
             }
         }
         System.out.printf("%d",counter);
-
-
     }
 }

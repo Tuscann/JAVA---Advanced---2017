@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class _08_Matrix_shuffling {
-    public static void main(String[] args) {
+    public static void main(String[] args) {         // 100/100
         Scanner scan = new Scanner(System.in);
 
         String[] dimensions = scan.nextLine().split("\\s+");

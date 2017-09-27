@@ -1,5 +1,5 @@
 public class _08_Lottery0 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {             // 100/100
         StringBuilder builder = new StringBuilder();
 
         for (int i1 = 1; i1 <= 8; i1++){

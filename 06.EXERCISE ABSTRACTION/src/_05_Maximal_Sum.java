@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _05_Maximal_Sum {
+public class _05_Maximal_Sum {                       // 100/100
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -9,17 +9,9 @@ public class _05_Maximal_Sum {
         int cols = Integer.parseInt(matrixSize[1]);
 
         int[][] matrix = new int[rows][cols];
+        fillMatrix(scan, rows, cols, matrix);
 
-//        for (int i = 0; i < matrixSize.length; i++) {
-//            matrix[i] = Arrays.stream(scan.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
-//
-//        }
-        for (int i = 0; i < rows; i++) {
-            String[] currentLine = scan.nextLine().split("\\s+");
-            for (int j = 0; j < cols; j++) {
-                matrix[i][j] = Integer.parseInt(currentLine[j]);
-            }
-        }
+
         Integer max = Integer.MIN_VALUE;
         int startRow = 0;
         int startCol = 0;
@@ -37,6 +29,23 @@ public class _05_Maximal_Sum {
                 }
             }
         }
+        printMatrix(matrix, max, startRow, startCol);
+    }
+
+    private static void fillMatrix(Scanner scan, int rows, int cols, int[][] matrix) {
+        //        for (int i = 0; i < matrixSize.length; i++) {
+//            matrix[i] = Arrays.stream(scan.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
+//
+//        }
+        for (int i = 0; i < rows; i++) {
+            String[] currentLine = scan.nextLine().split("\\s+");
+            for (int j = 0; j < cols; j++) {
+                matrix[i][j] = Integer.parseInt(currentLine[j]);
+            }
+        }
+    }
+
+    private static void printMatrix(int[][] matrix, Integer max, int startRow, int startCol) {
         System.out.printf("Sum = %d%n", max);
 
         for (int i = 0; i < 3; i++) {

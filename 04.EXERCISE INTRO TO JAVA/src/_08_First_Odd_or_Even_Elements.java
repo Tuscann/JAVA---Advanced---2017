@@ -1,8 +1,6 @@
-import org.omg.CORBA.INTERNAL;
-
 import java.util.Scanner;
 
-public class _08_First_Odd_or_Even_Elements {
+public class _08_First_Odd_or_Even_Elements {  // 100/100
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

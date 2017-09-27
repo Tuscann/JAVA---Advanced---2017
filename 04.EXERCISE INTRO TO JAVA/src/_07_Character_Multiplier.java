@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _07_Character_Multiplier {
+public class _07_Character_Multiplier {  // 100/100
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String first = scanner.next();

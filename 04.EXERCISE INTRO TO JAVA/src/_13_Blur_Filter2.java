@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _13_Blur_Filter2 {
+public class _13_Blur_Filter2 {                 // 100/100
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 

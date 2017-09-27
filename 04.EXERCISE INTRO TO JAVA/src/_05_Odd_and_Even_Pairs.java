@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _05_Odd_and_Even_Pairs {
+public class _05_Odd_and_Even_Pairs {        // 100/100
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

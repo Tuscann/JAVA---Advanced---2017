@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _06_Sequence_in_Matrix {     // 100/100
+public class _06_Sequence_in_Matrix {            // 100/100
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String[] input = scan.nextLine().split(" ");

@@ -28,15 +28,22 @@ public class _12_To_the_Stars {   // 100/100
         for (int i = 0; i <= rotations; i++) {
 
             if (fistStarX + 1 >= startX && startX >= fistStarX - 1 &&
-                    fistStarY + 1 >= startY && startY >= fistStarY - 1) {
+                    fistStarY + 1 >= startY && startY >= fistStarY - 1)
+            {
                 System.out.println(firstStarName);
-            } else if (secoundStarX + 1 >= startX && startX >= secoundStarX - 1 &&
-                    secoundStarY + 1 >= startY && startY >= secoundStarY - 1) {
+            }
+            else if (secoundStarX + 1 >= startX && startX >= secoundStarX - 1 &&
+                    secoundStarY + 1 >= startY && startY >= secoundStarY - 1)
+            {
                 System.out.println(secoundStarName);
-            } else if (thirdStarX + 1 >= startX && startX >= thirdStarX - 1 &&
-                    thirdStarY + 1 >= startY && startY >= thirdStarY - 1) {
+            }
+            else if (thirdStarX + 1 >= startX && startX >= thirdStarX - 1 &&
+                    thirdStarY + 1 >= startY && startY >= thirdStarY - 1)
+            {
                 System.out.println(thirdStarName);
-            } else {
+            }
+            else
+            {
                 System.out.println("space");
             }
             startY += 1;

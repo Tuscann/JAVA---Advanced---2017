@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import java.util.Scanner;          //  0/100
 
 public class _10_Plus_Remove {
     public static void main(String[] args) {

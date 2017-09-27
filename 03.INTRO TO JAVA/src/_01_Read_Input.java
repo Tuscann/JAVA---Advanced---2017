@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _01_Read_Input {
+public class _01_Read_Input {                     // 100/100
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String firstWord = scanner.next();
@@ -12,7 +12,5 @@ public class _01_Read_Input {
         Integer sum = number1 + number2 + number3;
 
         System.out.printf("%s %s %s %d", firstWord, secondWord, thirdWord, sum);
-
-
     }
 }

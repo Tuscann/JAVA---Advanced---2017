@@ -1,8 +1,7 @@
-import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class _07_Product_of_Numbers_N_M {
+public class _07_Product_of_Numbers_N_M {  //100/100
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Integer first = Integer.parseInt(scanner.next());

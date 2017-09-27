@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _02_Matrix_of_Palindromes2 {
+public class _02_Matrix_of_Palindromes2 {    // 100/100
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String[] input = scan.nextLine().split(" ");

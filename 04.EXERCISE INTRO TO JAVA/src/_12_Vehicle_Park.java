@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class _12_Vehicle_Park {
+public class _12_Vehicle_Park {                  // 100/100
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<String> list = new ArrayList<String>();
@@ -35,7 +35,5 @@ public class _12_Vehicle_Park {
         System.out.printf("Vehicles left: ");
         System.out.printf("%s%n", list.toString().substring(1, list.toString().length() - 1));
         System.out.printf("Vehicles sold: %d", counter);
-
-
     }
 }

@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*;  // 100/100
 
 public class _02_Encrypt_Sort_and_Print_Array {
     public static void main(String[] args) {

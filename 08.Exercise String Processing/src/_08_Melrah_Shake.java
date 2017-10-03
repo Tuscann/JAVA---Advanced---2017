@@ -1,5 +1,6 @@
 package src;
-import java.util.Scanner;  // 100/100
+
+import java.util.Scanner;  // 0/100
 
 public class _08_Melrah_Shake {
     public static void main(String[] args) {
@@ -8,9 +9,10 @@ public class _08_Melrah_Shake {
         String input = scan.nextLine();
         String pattern = scan.nextLine();
 
-        while (true) {
+        while (input.length() > 0 && pattern.length() < input.length()) {
 
             boolean contains = input.contains(pattern);
+
             if (contains) {
                 input = input.replaceAll(pattern, "");
 
@@ -22,7 +24,6 @@ public class _08_Melrah_Shake {
 
             } else {
                 System.out.printf("No shake.\n");
-                break;
             }
         }
         System.out.printf("%s", input);

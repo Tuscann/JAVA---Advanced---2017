@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner;  // 100/100
 
 public class _03_Sum_Matrix_Elements {
     public static void main(String[] args) {

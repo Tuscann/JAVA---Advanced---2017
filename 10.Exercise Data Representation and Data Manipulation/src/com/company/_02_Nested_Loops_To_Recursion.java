@@ -1,10 +1,9 @@
 package com.company;
 
-import java.io.BufferedReader;
+import java.io.BufferedReader;   // 100/100
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class _02_Nested_Loops_To_Recursion {
     private static int numberOfLoops;

@@ -6,13 +6,7 @@ public class _01_Students_Results {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-//        Integer n = Integer.parseInt(scan.nextLine());
 
-        System.out.printf("%1$-10s|%2$7s|%3$7s|%4$7s|%5$7s|\n"
-                ,"Name","JAdv","JavaOOP","AdvOOP","Average");
-
-
-//        for (int i = 0; i < n; i++) {
         String x = scan.nextLine();
 
         String[] currentrow = x.split("-");
@@ -24,10 +18,10 @@ public class _01_Students_Results {
         Double advOop = Double.parseDouble(digits[2]);
         Double average = (jadv + oop + advOop) / 3;
 
+        System.out.printf("%1$-10s|%2$7s|%3$7s|%4$7s|%5$7s|\n"
+                ,"Name","JAdv","JavaOOP","AdvOOP","Average");
+
         System.out.printf("%1$-10s|%2$7.2f|%3$7.2f|%4$7.2f|%5$7.4f|\n"
                 ,name,jadv,oop,advOop,average);
-//        }
-
-
     }
 }

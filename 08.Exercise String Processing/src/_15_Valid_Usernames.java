@@ -31,8 +31,5 @@ public class _15_Valid_Usernames {
             }
         }
         System.out.printf("%s\n%s", names.get(firstIndex), names.get(firstIndex + 1));
-
-
     }
 }
-

@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.Scanner;
+import java.util.Scanner; // 100/100
 
 public class _04_Combinations_Count {
     public static void main(String[] args) {
@@ -12,23 +12,6 @@ public class _04_Combinations_Count {
         Long x = binomial(n, k);
 
         System.out.printf("%d%n",x );
-
-//        int i, factN = 1, factNK = 1, factK = 1;
-//
-//        for (i = 1; i <= n; i++) {
-//            factN = factN * i;
-//        }
-//        for (i = 1; i <= n - k; i++) {
-//            factNK = factNK * i;
-//        }
-//        for (i = 1; i <= k; i++) {
-//            factK = factK * i;
-//        }
-//
-//        Integer sum = factN / factNK * factK;
-//
-//        System.out.print(sum);
-
     }
 
     private static long binomial(int n, int k) {

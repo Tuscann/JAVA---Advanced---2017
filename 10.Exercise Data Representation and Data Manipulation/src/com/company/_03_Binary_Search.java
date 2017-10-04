@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.Scanner;
+import java.util.Scanner;  // 100/100
 
 public class _03_Binary_Search {
     public static void main(String[] args) {
@@ -21,6 +21,5 @@ public class _03_Binary_Search {
         if (found) {
             System.out.println(-1);
         }
-
     }
 }

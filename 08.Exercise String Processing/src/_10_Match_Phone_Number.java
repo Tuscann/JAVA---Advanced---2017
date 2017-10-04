@@ -9,6 +9,7 @@ public class _10_Match_Phone_Number {
 
         String text = scan.nextLine();
         String regex = "\\+359( |-)2\\1\\d{3}\\1\\d{4}$";
+  //   String pattern= "^\\+359([\\s-])2\\1([0-9]){3}\\1([0-9]){4}$";= "^\\+359([\\s-])2\\1([0-9]){3}\\1([0-9]){4}$";
 
         while (!text.equals("end")) {
             if (Pattern.matches(regex, text)) {

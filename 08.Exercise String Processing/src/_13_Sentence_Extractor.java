@@ -17,8 +17,7 @@ public class _13_Sentence_Extractor {
 
         String input = in.readLine();
         Matcher matcher = pattern.matcher(input);
-        while(matcher.find())
-        {
+        while (matcher.find()) {
             System.out.println(matcher.group().trim());
         }
     }

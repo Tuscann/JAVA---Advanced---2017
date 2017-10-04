@@ -18,8 +18,8 @@ public class _08_Melrah_Shake2 {
 
             if (firstIndex != -1 && lastIndex != -1) {
                 StringBuilder sb = new StringBuilder(text);
-                sb.replace(firstIndex,pattern.length() + firstIndex,"");
-                sb.replace(lastIndex - pattern.length(),pattern.length() + (lastIndex - pattern.length()),"");
+                sb.replace(firstIndex, pattern.length() + firstIndex, "");
+                sb.replace(lastIndex - pattern.length(), pattern.length() + (lastIndex - pattern.length()), "");
 
                 text = sb.toString();
                 patternBuilder.deleteCharAt(pattern.length() / 2);
@@ -32,4 +32,5 @@ public class _08_Melrah_Shake2 {
 
         System.out.println("No shake.");
         System.out.println(text);
-}}
+    }
+}

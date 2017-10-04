@@ -1,6 +1,6 @@
 package src;
 
-import java.util.Scanner;
+import java.util.Scanner; // 100/100
 
 public class _07_Letters_Change_Numbers3 {
     public static void main(String[] args) {
@@ -8,10 +8,10 @@ public class _07_Letters_Change_Numbers3 {
 
         String[] inputArguments = in.nextLine().split("\\s+");
         double totalResult = 0;
-        for (int i = 0; i < inputArguments.length; i++) {
-            char firstChar = inputArguments[i].charAt(0);
-            char lastChar = inputArguments[i].charAt(inputArguments[i].length() - 1);
-            double number = Double.parseDouble(inputArguments[i].substring(1, inputArguments[i].length() - 1));
+        for (String word : inputArguments) {
+            char firstChar = word.charAt(0);
+            char lastChar = word.charAt(word.length() - 1);
+            double number = Double.parseDouble(word.substring(1, word.length() - 1));
 
             if (Character.toString(firstChar).equals(Character.toString(firstChar).toLowerCase())) {
                 number *= firstChar - 96;

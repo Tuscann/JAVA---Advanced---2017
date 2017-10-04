@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.Scanner;
+import java.util.Scanner;  // 100/100
 
 public class _01_Reverse_Array {
 

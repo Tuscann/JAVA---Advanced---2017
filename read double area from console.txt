@@ -1,0 +1,12 @@
+
+------ read double area from console ---------
+ 
+double[] input = Arrays.stream(scan.readLine()
+.split(", "))
+.mapToDouble(Double::parseDouble)
+.toArray();
+
+
+--- remove brackets from area---
+
+numbers.toString().substring(1, numbers.toString().length() - 1)

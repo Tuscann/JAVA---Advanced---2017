@@ -1,10 +1,9 @@
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.InputStreamReader;  // 100/100
 import java.util.ArrayDeque;
 import java.util.Collections;
 import java.util.Deque;
-import java.util.Scanner;
 
 public class _03_Basic_Queue_Operations {
     public static void main(String[] args) throws IOException {
@@ -13,7 +12,7 @@ public class _03_Basic_Queue_Operations {
 
         int addElements = Integer.parseInt(input[0]);
         int removeElements = Integer.parseInt(input[1]);
-        int serchedInteger = Integer.parseInt(input[2]);
+        int searchedInteger = Integer.parseInt(input[2]);
 
         String[] area = reader.readLine().split("\\s+");
 
@@ -27,7 +26,7 @@ public class _03_Basic_Queue_Operations {
             stack.removeLast();
         }
 
-        if (stack.contains(serchedInteger)) {
+        if (stack.contains(searchedInteger)) {
             System.out.printf("true");
         } else {
             if (stack.size() != 0) {

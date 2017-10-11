@@ -1,33 +1,38 @@
 import java.util.ArrayDeque;
-import java.util.Collections;
-import java.util.Deque;
-import java.util.Scanner;
+import java.util.Scanner; //100/100
 
 public class _02_Maximum_Element {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        int commandCount = sc.nextInt();
 
-        Long n = Long.parseLong(scan.nextLine());
-        Deque<Long> stack = new ArrayDeque<>();
+        ArrayDeque<Integer> stack = new ArrayDeque<>();
+        ArrayDeque<Integer> maxStack = new ArrayDeque<>();
+        int max = Integer.MIN_VALUE;
 
-        for (int i = 0; i <= n; i++) {
-            String cure = scan.nextLine();
+        for (int i = 0; i < commandCount; i++) {
+            int command = sc.nextInt();
 
-            if (cure.equals("2")){
-                stack.pop();
-            }
-            else if (cure.equals("3"))
-            {
-                System.out.println(Collections.max(stack));
-            }
-            else {
-
-                String[] current = cure.split("\\s+");
-
-                if (current[0].equals("1")){
-                    stack.push(Long.parseLong(current[1]));
+            if (command == 1) {
+                int numToPush = sc.nextInt();
+                stack.push(numToPush);
+                if (max < numToPush) {
+                    max = numToPush;
+                    maxStack.push(max);
                 }
+            } else if (command == 2) {
+                int poppedItem = stack.pop();
+                if (poppedItem == max) {
+                    maxStack.pop();
+                    if (maxStack.size() > 0) {
+                        max = maxStack.peek();
+                    } else {
+                        max = Integer.MIN_VALUE;
+                    }
+                }
+            } else {
+                System.out.println(max);
             }
         }
     }

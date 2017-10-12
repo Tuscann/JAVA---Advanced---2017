@@ -10,8 +10,8 @@ public class _04_Add_VAT {
         BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
         double[] input = Arrays.stream(scan.readLine().split(", ")).mapToDouble(Double::parseDouble).toArray();
         UnaryOperator<Double> result = num -> num * 1.2;
-        System.out.println("Prices with VAT:");
 
+        System.out.println("Prices with VAT:");
         for (double anInput : input) {
             System.out.println(String.format("%.2f", result.apply(anInput)).replace(".", ","));
         }

@@ -1,6 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.InputStreamReader; // 20/100
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -23,7 +23,5 @@ public class _05_Filter_By_Age {
         String condition = reader.readLine();
         int ageLimit = Integer.parseInt(reader.readLine());
         String format = reader.readLine();
-
-
     }
 }

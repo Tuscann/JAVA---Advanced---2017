@@ -15,7 +15,6 @@ public class _10_Count_Symbols
             if (!charsCount.containsKey(ch)) {
                 charsCount.put(ch, 0);
             }
-
             charsCount.put(ch, charsCount.get(ch) + 1);
         }
 

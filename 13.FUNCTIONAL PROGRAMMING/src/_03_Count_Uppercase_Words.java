@@ -10,18 +10,17 @@ public class _03_Count_Uppercase_Words {
         List<String> specialWord = new ArrayList<>();
 
         Integer count = 0;
-        for (int i = 0; i < input.length; i++) {
-            Character first = input[i].charAt(0);
+        for (String anInput : input) {
+            Character first = anInput.charAt(0);
 
             if (first.toString().equals(first.toString().toUpperCase())) {
                 count++;
-                specialWord.add(input[i]);
+                specialWord.add(anInput);
             }
         }
         System.out.println(specialWord.size());
         for (String aSpecialWord : specialWord) {
             System.out.println(aSpecialWord);
         }
-
     }
 }

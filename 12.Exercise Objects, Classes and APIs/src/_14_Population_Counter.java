@@ -18,7 +18,8 @@ public class _14_Population_Counter {
         for (Map.Entry<String, Long> country : orderedByCountryPopulation.entrySet()) {
             System.out.printf("%s (total population: %d)%n", country.getKey(), country.getValue());
 
-            LinkedHashMap<String, Integer> orderedCitiesByPopulation = countryAndCityPopulation.get(country.getKey())
+            LinkedHashMap<String, Integer> orderedCitiesByPopulation =
+                    countryAndCityPopulation.get(country.getKey())
                     .entrySet().stream()
                     .sorted(Map.Entry.comparingByValue(Collections.reverseOrder()))
                     .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));

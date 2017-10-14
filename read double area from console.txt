@@ -9,4 +9,7 @@ double[] input = Arrays.stream(scan.readLine()
 
 --- remove brackets from area---
 
-numbers.toString().substring(1, numbers.toString().length() - 1)
+numbers.toString().substring(1, numbers.toString().length() - 1);
+
+----------------------------------
+int[] intArray = Arrays.stream(inputArr).mapToInt(Integer::parseInt).toArray();

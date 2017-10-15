@@ -3,7 +3,7 @@ import java.io.IOException;
 
 public class _01_Read_File {
     public static void main(String[] args) {
-        String inputPath = "C:\\Users\\123\\Documents\\Java---Advanced---2017\\17.INPUTOUTPUT, FILES AND DIRECTORIES\\src\\input.txt";
+        String inputPath = "C:\\Users\\me\\Documents\\JAVA - Advanced - септември 2017\\17.INPUTOUTPUT, FILES AND DIRECTORIES\\src\\input.txt";
 
         try (FileInputStream fis = new FileInputStream(inputPath)) {
             int oneByte = fis.read();

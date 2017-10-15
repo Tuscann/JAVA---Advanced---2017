@@ -7,8 +7,8 @@ import java.util.Set;
 
 public class _02_Write_to_a_File {
     public static void main(String[] args) {
-        String inputPath = "C:\\Users\\123\\Documents\\Java---Advanced---2017\\17.INPUTOUTPUT, FILES AND DIRECTORIES\\src\\input2.txt";
-        String outputPath = "C:\\Users\\123\\Documents\\Java---Advanced---2017\\17.INPUTOUTPUT, FILES AND DIRECTORIES\\src\\output.txt";
+        String inputPath = "C:\\Users\\me\\Documents\\JAVA - Advanced - септември 2017\\17.INPUTOUTPUT, FILES AND DIRECTORIES\\src\\input2.txt";
+        String outputPath = "C:\\Users\\me\\Documents\\JAVA - Advanced - септември 2017\\17.INPUTOUTPUT, FILES AND DIRECTORIES\\src\\output.txt";
         Set<Character> punctuation = new HashSet<>();
         Collections.addAll(punctuation, '.', ',', '!', '?');
 

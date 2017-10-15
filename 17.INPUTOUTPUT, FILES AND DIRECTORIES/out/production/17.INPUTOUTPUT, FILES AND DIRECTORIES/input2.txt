@@ -33,7 +33,7 @@ upon his friend's Christian name. These are the last lines of the
 thirty-first sonnet:--
 
    "Se vint' e pres' i' debb' esser beato,
-    Meraviglia non e se, nud' e solo,
+    Meraviglia non è se, nud' e solo,
     Resto prigion d'un _Cavalier_ armato."
 
     "If only chains and bands can make me blest,
@@ -104,7 +104,7 @@ glows in their soul to a solitary flame which finds no nourishment from
 without. The ashes of my youth become its death-bed, says Shakespeare.
 They are a funeral pile, says Byron.
 
-Nor is it possible to conclude, as Schuck does, from the conventional
+Nor is it possible to conclude, as Schück does, from the conventional
 style of the first seventeen Sonnets--for instance, from their almost
 verbal identity with a passage in Sidney's _Arcadia_--that they are
 quite devoid of relation to the poet's own life.
@@ -136,7 +136,7 @@ assurance to his friend that he will not obtrude on others the fact of
 their friendship:--
 
     "I may not evermore acknowledge thee,
-     Lest my bewailed guilt should do thee shame:
+     Lest my bewailèd guilt should do thee shame:
      Nor thou with public kindness honour me,
      Unless thou take that honour from thy name:
      But do not so; I love thee in such sort,
@@ -259,11 +259,11 @@ faithlessness. In Sonnet lxxxviii.:--
 Sonnet lxxxix. is still more strongly worded:--
 
     "Thou canst not, love, disgrace me half so ill,
-     To set a form upon desired change,
+     To set a form upon desirèd change,
      As I'll myself disgrace: knowing thy will,
      I will acquaintance strangle, and look strange;
      Be absent from thy walks; and in my tongue
-     Thy sweet-beloved name no more shall dwell,
+     Thy sweet-belovèd name no more shall dwell,
      Lest I (too much profane) should do it wrong,
      And haply of our old acquaintance tell.
         For thee, against myself I'll vow debate,

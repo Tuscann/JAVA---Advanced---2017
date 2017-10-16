@@ -12,7 +12,6 @@ public class _05_Min_Even_Number {
             return;
         }
 
-
         String[] input = x.split("\\s+");
         List<Double> numbers = new ArrayList<>();
         boolean isFound = true;

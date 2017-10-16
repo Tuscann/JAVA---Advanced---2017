@@ -1,32 +1,24 @@
-import java.util.*;  // 60/100
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*; // 100/100
 
 public class _03_First_Name {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
-        String[] input = scan.nextLine().split("\\s+");
-        String[] characters = scan.nextLine().split("\\s+");
-        Boolean isFound = true;
+        List<String> names = Arrays.asList(bf.readLine().split("\\s+"));
+        Set<Character> letters = new HashSet<>();
 
-        SortedSet<String> oreder = new TreeSet<>();
+        Arrays.stream(bf.readLine().split("\\s+"))
+                .map(s -> s.toUpperCase().charAt(0))
+                .forEach(letters::add);
 
-        Collections.addAll(oreder, input);
+        Optional<String> firstName = names.stream()
+                .filter(s -> letters.contains(s.charAt(0)))
+                .sorted()
+                .findFirst();
 
-        for (int i = 0; i < oreder.size(); i++) {
-
-            String current = oreder.first();
-            for (String character : characters) {
-                if (current.substring(0, 1).equalsIgnoreCase(character)) {
-                    System.out.printf("%s", current);
-                    isFound = false;
-                    break;
-
-                }
-            }
-            oreder.remove(current);
-        }
-        if (isFound){
-            System.out.printf("No match");
-        }
+        System.out.println(firstName.orElse("No match"));
     }
 }

@@ -2,7 +2,7 @@ public class Person {
     private String name;
     private Integer group;
 
-    public Person(String name, Integer group) {
+    Person(String name, Integer group) {
         this.name = name;
         this.group = group;
     }
@@ -10,7 +10,7 @@ public class Person {
     public Person() {
     }
 
-    public String getName() {
+    String getName() {
         return this.name;
     }
 
@@ -18,7 +18,7 @@ public class Person {
         this.name = name;
     }
 
-    public Integer getGroup() {
+    Integer getGroup() {
         return this.group;
     }
 
